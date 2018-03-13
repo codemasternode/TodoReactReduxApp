@@ -1,7 +1,10 @@
-export default function addTodo(todo) {
+
+export const add_todo = "ADD_TODO"
+
+export function addTodo(todo) {
   console.log(todo);
   return {
-    type: "ADD_TODO",
+    type: add_todo,
     payload: todo
   };
 }
